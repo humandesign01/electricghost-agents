@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "identifier": "kura-sticker-album",
+  "meta": {
+    "avatar": "🔳",
+    "title": "Kura Sticker Album",
+    "description": "Fetches custom sticker URLs for Kura based on interaction context."
+  },
+  "api": [
+    {
+      "name": "get_sticker",
+      "description": "Retrieves the direct URL of a pre-made sticker asset matching agent's expression",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "keyword": {
+            "type": "string",
+            "description": "The theme or emotion requested.",
+            "enum": ["happy", "sad", "love", "shocked", "cool", "angry", "celebrate", "thinking"]
+          }
+        },
+        "required": ["keyword"]
+      }
+    }
+  ],
+  "ui": {
+    "url": "https://githubusercontent.com",
+    "stickers": {
+      "happy": "https://githubusercontent.com",
+      "sad": "https://githubusercontent.com",
+      "love": "https://githubusercontent.com",
+      "shocked": "https://githubusercontent.com",
+      "cool": "https://githubusercontent.com",
+      "angry": "https://githubusercontent.com",
+      "celebrate": "https://githubusercontent.com",
+      "thinking": "https://githubusercontent.com"
+    }
+  }
+}
